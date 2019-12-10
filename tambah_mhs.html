@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tambah Mahasiswa</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="Pendaftaran/css/stylecss.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">SISKA-UBG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="data_mhs.html">Data Mahasiswa</a>
+        <a class="nav-item nav-link" href="data_nilai.html">Data Nilai</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <h3 style="text-align: center;"> Form Tambah Mahasiswa </h3>
+    <div class="col-sm-6">
+    <form action="proses_tambah.php" method="POST" enctype="multipart/form-data"> 
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Nim Mahasiswa</label>
+        </div>
+        <div class="col-sm-6">
+          <input type="text" name="nim_mhs" class="form-control" maxlength="10">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Nama Mahasiswa</label>
+        </div>
+        <div class="col-sm-6">
+          <input type="text" name="nama_mhs" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+            <label for="">Smester</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" name="smester" class="form-control">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Jurusan</label>
+        </div>
+        <div class="col-sm-6">
+          <select name="jurusan" class="form-control" id="">
+            <option>--Pilih Jurusan--</option>
+            <option value="S1 ILKOM">S1 ILKOM</option>
+            <option value="S1 DKV">S1 DKV</option>
+            <option value="D3 MI">D3 MI</option>
+            <option value="D3 RPL">D3 RPL</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Alamat</label>
+        </div>
+        <div class="col-sm-6">
+          <textarea name="alamat"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Email</label>
+        </div>
+        <div class="col-sm-6">
+          <input type="email" name="email" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">No. HP</label>
+        </div>
+        <div class="col-sm-6">
+          <input type="text" name="no_hp" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Jenis Kelamin</label>
+        </div>
+        <div class="col-sm-6">
+          <input type="radio" name="jenis_kelamin" value="L">L</input>
+          <input type="radio" name="jenis_kelamin" value="P">P</input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="">Status</label>
+        </div>
+        <div class="col-sm-6">
+          <input type="radio" name="status" value="Aktif">Aktif</input>
+          <input type="radio" name="status" value="Tidak Aktif">Tidak Aktif</input>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+            <label for="">Foto</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="file" name="foto" form-control>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <button type="submit" name="simpan" class="btn btn-primary">Tambah Mahasiswa</button>
+        </div>
+
+      </div>
+    </div>
+    </form>
+  </div>
+</body>
+
+</html>

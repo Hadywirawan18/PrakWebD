@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan 2</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+</head>
+<body>
+
+    <fieldset style="align-content: center">
+            <form action="simpanform.php" method="POST" enctype="" name="">
+            <table align="center">
+                    <tr>
+                        <td colspan="3">
+                                <h2>INFORMASI PERSONAL</h2>
+                        </td>
+                    </tr>
+                        <tr>
+                                <td>No. Pendaftaran</td>
+                                <td>:</td>
+                                <td><input type="number" name="no_pendaftaran" required></td>
+                        </tr>
+                        <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td><input type="text" name="nama" size="50"required></td>
+                        </tr>
+                        <tr>
+                                <td>Tempat Tanggal Lahir</td>
+                                <td>:</td>
+                                <td><input type="text" name="ttl" id="" size="30"required> <input type="date" name="" id=""required> </td>           
+                        </tr>
+                        <tr>
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td><textarea name="alamat" cols="50" rows="3" required></textarea> </td>           
+                        </tr>
+                        <tr>
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td><select name="agama" required>
+                                        <option>Islam</option>
+                                        <option>Kristen</option>
+                                        <option>Hindu</option>
+                                        <option>Budha</option>
+                                        </select></td>           
+                        </tr>
+                        <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td><input type="radio" name="jk" value="L" checked>Laki-Laki <input type="radio" name="jk" value="P">Perempuan</td>
+                        </tr>
+                        <tr>
+                                <td>Status</td>
+                                <td>:</td>
+                                <td><select name="status">
+                                        <option>Menikah</option>
+                                        <option>Belum Menikah</option>
+                                        </select></td>           
+                        </tr>
+                        <tr>
+                                <td>Kewarganegaraan</td>
+                                <td>:</td>
+                                <td><select name="kewarganegaraan">
+                                        <option>WNI</option>
+                                        <option>ASING</option>
+                                        </select></td>           
+                        </tr>
+                        <tr>
+                                <td>Pekerjaan</td>
+                                <td>:</td>
+                                <td><input type="text" name="pekerjaan" size="50"required></td>
+                        </tr>
+                        <tr>
+                          <td>Kelurahan</td>
+                                <td>:</td>
+                                <td><input type="text" name="kelurahan" size="50"required></td>
+                        </tr>
+                        <tr>
+                                <td>Kecamatan</td>
+                                <td>:</td>
+                                <td><input type="text" name="kecamatan" size="50"required></td>
+                        </tr>
+                        <tr>
+                                <td>Kota/Kabupaten</td>
+                                <td>:</td>
+                                <td><input type="text" name="kota" size="50"required></td>
+                        </tr>
+                        <tr>
+                                <td>Provinsi</td>
+                                <td>:</td>
+                                <td><select name="provinsi">
+                                        <option>Nusa Tenggara Barat</option>
+                                        <option>Nusa Tenggara TImur</option>
+                                        </select></td>
+                        </tr>
+                        <tr>
+                                <td>No Telepon</td>
+                                <td>:</td>
+                                <td><input type="text" name="notlp" size="50"required></td>
+            
+                        </tr>
+                        <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td><input type="email" name="email"required></td>
+                        </tr>
+                        <tr>
+                                <td colspan="3"><h2>INFORMASI SEKOLAH</h2></td>
+                        </tr>
+                        <tr>
+                                <td>Asal Sekolah</td>
+                                <td>:</td>
+                                <td><input type="text" name="asalsekolah" size="50"required></td>
+            
+                        </tr>
+                        <tr>
+                                <td>Jurusan Sekolah</td>
+                                <td>:</td>
+                                <td><input type="text" name="jurusansekolah" size="50"required></td>
+            
+                        </tr>
+                        <tr>
+                                <td>Nilai Ujian Nasional</td>
+                                <td>:</td>
+                                <td><input type="number" name="nilaiun" size="50"required></td>
+            
+                        </tr>
+                        <tr>
+                                <td>Tahun Ajaran</td>
+                                <td>:</td>
+                                <td><select name="tahunajaran">
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        </select></td>           
+                        </tr>
+                        <tr>
+                                <td colspan="3"><h2>PILIH PROGRAM STUDI</h2></td>
+                        </tr>
+                        <tr>
+                                <td>Program Studi I</td>
+                                <td>:</td>
+                                <td><select name="prodi1">
+                                        <option>S1 TI</option>
+                                        <option>D3 TI</option>
+                                        </select></td>           
+                        </tr>
+                        <tr>
+                                <td>Program Studi II</td>
+                                <td>:</td>
+                                <td><select name="prodi2" >
+                                        <option>S1 Manajemen</option>
+                                        <option>D3 Manajemen</option>
+                                        </select></td>           
+                        </tr>
+                        <tr>
+                                <td colspan="3"><h2>INFORMASI PENDUKUNG</h2></td>
+                        </tr>
+                        <tr>
+                                <td>Foto Anda (Max 2MB)</td>
+                                <td>:</td>
+                                <td><input type="file" name="fild_file"required></td>
+                        </tr>
+                        <tr>
+                                <td></td>
+                                <td></td>
+                                <td><button type="submit">Submit</button> <button type="reset">Reset</button></td>
+                                
+                        </tr>
+         
+            
+                </table>
+            </form>
+
+    </fieldset>
+    
+    
+    
+</body>
+</html>
